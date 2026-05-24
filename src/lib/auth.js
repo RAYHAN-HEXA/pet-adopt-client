@@ -1,6 +1,7 @@
 import { betterAuth } from 'better-auth';
 import { mongodbAdapter } from 'better-auth/adapters/mongodb';
 import { jwt } from 'better-auth/plugins';
+import { nextCookies } from 'better-auth/next-js';
 import { MongoClient } from 'mongodb';
 
 const client = new MongoClient(process.env.DATABASE_URL);
@@ -44,6 +45,7 @@ export const auth = betterAuth({
   },
   plugins: [
     jwt(),
+    nextCookies(),
   ],
   advanced: {
     defaultCookieAttributes: {
