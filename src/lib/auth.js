@@ -54,6 +54,6 @@ export const auth = betterAuth({
     crossSubDomain: {
       enabled: false,
     },
-    disableCSRFCheck: process.env.NODE_ENV === 'development',
+    disableCSRFCheck: true,
   },
 });
