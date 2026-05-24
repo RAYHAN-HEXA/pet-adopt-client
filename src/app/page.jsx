@@ -60,10 +60,10 @@ export default function Home() {
                 Adopt Now
               </Link>
               <Link
-                href="/about"
+                href="/pets"
                 className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-600 transition-colors"
               >
-                Learn More
+                Browse Pets
               </Link>
             </div>
           </motion.div>
